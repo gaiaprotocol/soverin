@@ -51,8 +51,23 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/io.netty.versions.properties'
+        exclude 'META-INF/INDEX.LIST'
+    }
 }
 
 flutter {
     source = "../.."
+}
+
+repositories {
+    maven { url "https://dl.cloudsmith.io/public/libp2p/jvm-libp2p/maven/" }
+    maven { url "https://jitpack.io" }
+    maven { url "https://artifacts.consensys.net/public/maven/maven/" }
+}
+
+dependencies {
+    implementation 'io.libp2p:jvm-libp2p:1.1.1-RELEASE'
 }
