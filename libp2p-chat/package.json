@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@chainsafe/libp2p-gossipsub": "^13.1.0",
+    "@chainsafe/libp2p-noise": "^15.1.0",
+    "@libp2p/bootstrap": "^10.1.1",
+    "@libp2p/identify": "^2.1.1",
+    "@libp2p/mplex": "^10.1.1",
+    "@libp2p/tcp": "^9.1.1",
+    "@libp2p/websockets": "^8.1.1",
+    "@orbitdb/core": "^2.2.0",
+    "blockstore-level": "^1.1.8",
+    "helia": "^4.2.4",
+    "libp2p": "^1.8.0",
+    "libp2p-kad-dht": "^0.28.6"
+  }
+}
